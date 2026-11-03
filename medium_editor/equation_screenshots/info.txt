@@ -1,0 +1,1 @@
+This is where screenshots of rendered latex go that will be pasted into medium. Medium does not allow for latex rendering and this method works for me.

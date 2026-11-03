@@ -1,0 +1,1 @@
+This folder is where screen shots of progress on the medium editor itself go. This whole phase takes place after the markdown version of the article is written
