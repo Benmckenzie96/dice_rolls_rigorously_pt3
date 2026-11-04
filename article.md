@@ -35,6 +35,11 @@ $$
 $$
 *figure 14 from article 1*
 
+Note that since we know from article 1 that the max value our probability measure can take is 1, we can restate rule 4 as:
+$$
+4.\ \mathcal{P}:\mathcal{F}\rightarrow[0,1]
+$$
+
 Now, we know that our sample space is an element of our event space, and we also know that the elements of our event space are subsets of our sample space. The question we want our probabiliy measure to answer is:
 $$
 \text{What are the chances of }E\in\mathcal{F}\text{ happening?}
