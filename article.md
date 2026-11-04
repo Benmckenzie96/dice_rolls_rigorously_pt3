@@ -16,12 +16,13 @@ Define the measure itself, make note that this is from the domain side of our ra
 To start, we need to define the probability measure of our underlying probability space (the left side of our random variable). We learned in the first article that our underlying probability space is the measure space:
 $$
 \begin{aligned}
-&(\Omega,\mathcal{F},\mathcal{P})\\
+&\hspace{2em}(\Omega,\mathcal{F},\mathcal{P})\\
 &\Omega:\text{ is our sample space}\\
 &\mathcal{F}:\text{ is our event space}
 \end{aligned}
 $$
 *figure 1*
+
 
 this does NOT pertain to sums, we aren't there yet in this section.
 ### Our Underlying Probability space
