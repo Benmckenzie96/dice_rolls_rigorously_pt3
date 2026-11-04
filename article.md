@@ -3,9 +3,11 @@
 Not by ai badges will eventually go here
 
 ![alt text](image.png)
-Blurb about the previous installment, and a link to it
+*This is the third and final installment in the series. I highly recommend reading both the first and second if you haven't already:*
+- *Part 1: https://medium.com/@mckenzieben15/two-dice-done-rigorously-sigma-algebras-pushforward-measures-random-variables-and-why-7-wins-0379d5513631*
+- *Part 2: https://medium.com/@mckenzieben15/two-dice-done-rigorously-sigma-algebras-pushforward-measures-random-variables-and-why-7-wins-0379d5513631*
 ## Brief Recap
-a recap of what we have done in parts 1 and 2
+In the first article we learned about the probability space tuple, that our probability space is a measurable space equipped with a probability measure, and what a sigma algebra on a set is. In the second article, we learned about preimages and measurable functions, and how a random variable is a measurable function from our underlying probability space, to the space of adding our dice rolls together. We finished that article off with an example relating all the concepts together.
 ## Defining our Probability Measure
 Define the measure itself, make note that this is from the domain side of our random variable. This is simply the cardinality of our event divided by the cardinality of our sample space. 
 
