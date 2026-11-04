@@ -16,14 +16,37 @@ Define the measure itself, make note that this is from the domain side of our ra
 To start, we need to define the probability measure of our underlying probability space (the left side of our random variable). We learned in the first article that our underlying probability space is the measure space:
 $$
 \begin{aligned}
-&\hspace{2em}(\Omega,\mathcal{F},\mathcal{P})\\
+&\hspace{3em}(\Omega,\mathcal{F},\mathcal{P})\\
 &\Omega:\text{ is our sample space}\\
-&\mathcal{F}:\text{ is our event space}
+&\mathcal{F}:\text{ is our event space}\\
+&\mathcal{P}: \text{ is our probability measure}
 \end{aligned}
 $$
 *figure 1*
 
+While we did give an overview of our probability measure and the qualities it has (*figure 14 in article 1*) we didn't actually define what values it takes. Here is where will will do so!
 
-this does NOT pertain to sums, we aren't there yet in this section.
+Recall the "rules" that our probability measure adheres to:
+$$
+\begin{aligned}
+&1.\ \mathcal{P}\left(\bigcup_{i=1}^\infty E_i\right)=\sum_{i=1}^\infty\mathcal{P}(E_i)\text{ where all }E_1,E_2\dots\in\mathcal{F}\text{ are pairwise disjoint}\\
+&2.\ \mathcal{P}(\emptyset)=0\\
+&3.\ \mathcal{P}(\Omega)=1, \text{ the measure of the sample space is } 1\\
+&4.\ \mathcal{P}:\mathcal{F}\rightarrow[0,\infty]\text{ (it's a measure and therefore nonnegative)}
+\end{aligned}
+$$
+*figure 14 from article 1*
+
+Now, we know that our sample space is an element of our event space, and we also know that the elements of our event space are subsets of our sample space. The question we want our probabiliy measure to answer is:
+$$
+\text{What are the chances of }E\in\mathcal{F}\text{ happening?}
+$$
+### A Bit of Intuition
+To build a bit of intuition before defining our probability measure formally, first recall what our sample space is:
+$$
+
+$$
+*Figure 2*
+
 ### Our Underlying Probability space
 conclusion where we show our probability space tuple. This would be the measurable space associated with the left side of our random variable.
