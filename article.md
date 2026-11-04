@@ -51,6 +51,13 @@ $$
 $$
 *Figure 2*
 
+Next, recall that our event space is the powerset of our sample space:
+
+$$
+\mathcal{F}=2^\Omega
+$$
+*figure 3*
+
 Next, we can ask ourselves, *how many elements are there in our sample space?* The answer 36. We arrive at this by noting for every 1st die roll, there are 6 possible ways to roll the second die. Since there are 6 possible ways to roll the first die, we have: 6x6=36.
 
 With the observation above, we know that the chances of getting **one specific pair of values** is then 1/36. Here is a quick quiz: *What are the chances of getting 3 distinct pairs of dice rolls?*
@@ -61,12 +68,12 @@ The answer...... 3/36. This will be the case for any number, we simply **divide 
 Remember, the elements of our event space are subsets of the sample space (including the whole sample space and the empty set). So we can state the intuition we learned above formally as:
 $$
 \begin{aligned}
-&\hspace{3em}\mathcal{P}(E\in\mathcal{F})=\frac{|E|}{|\Omega|}\\
+&\hspace{3em}\mathcal{P}(E)=\frac{|E|}{|\Omega|},\text{ for }E\in\mathcal{F}\\
 &\text{ where:}\\
 &\hspace{1em}|E|=\text{ the number of elements in the set }E\\
 &\hspace{1em}|\Omega|=36,\text{ the number of elements in our sample space}
 \end{aligned}
 $$
-*Figure 3*
+*Figure 4*
 ### Our Underlying Probability space
 conclusion where we show our probability space tuple. This would be the measurable space associated with the left side of our random variable.
