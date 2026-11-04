@@ -44,9 +44,20 @@ $$
 ### A Bit of Intuition
 To build a bit of intuition before defining our probability measure formally, first recall what our sample space is:
 $$
-
+\Omega=\{\omega=(i,j):i,j\in\{1,2,3,4,5,6\}\}
 $$
 *Figure 2*
 
+Next, we can ask ourselves, *how many elements are there in our sample space?* The answer 36. We arrive at this by noting for every 1st die roll, there are 6 possible ways to roll the second die. Since there are 6 possible ways to roll the first die, we have: 6x6=36.
+
+With the observation above, we know that the chances of getting **one specific pair of values** is then 1/36. Here is a quick quiz: *What are the chances of getting 3 specific pairs of dice rolls?*
+
+The answer...... 3/36. This will be the case for any number, we simply **divide the number of specific pairs of dice rolls by 36, the total number of pairs we have**. We need to relate this back to our formal framework though.
+
+### Formal Definition of Our Probability Measure
+We can state this formally as:
+$$
+$$
+*Figure 3*
 ### Our Underlying Probability space
 conclusion where we show our probability space tuple. This would be the measurable space associated with the left side of our random variable.
