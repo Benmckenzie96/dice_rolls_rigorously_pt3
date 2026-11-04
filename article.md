@@ -11,8 +11,6 @@ In the first article we learned about the probability space tuple, that our prob
 
 In this article, we will tie all the concepts we've used together, and **finally** answer our question: *"Why does 7 win when rolling two dice and taking their sum?"*
 ## Defining our Probability Measure
-Define the measure itself, make note that this is from the domain side of our random variable. This is simply the cardinality of our event divided by the cardinality of our sample space.
-
 To start, we need to define the probability measure of our underlying probability space (the left side of our random variable). We learned in the first article that our underlying probability space is the measure space:
 $$
 \begin{aligned}
@@ -55,8 +53,14 @@ With the observation above, we know that the chances of getting **one specific p
 The answer...... 3/36. This will be the case for any number, we simply **divide the number of specific pairs of dice rolls by 36, the total number of pairs we have**. We need to relate this back to our formal framework though.
 
 ### Formal Definition of Our Probability Measure
-We can state this formally as:
+Remember, the elements of our event space are subsets of the sample space (including the whole sample space and the empty set). So we can state the intuition we learned above formally as:
 $$
+\begin{aligned}
+&\hspace{3em}\mathcal{P}(E\in\mathcal{F})=\frac{|E|}{|\Omega|}\\
+&\text{ where:}\\
+&\hspace{1em}|E|=\text{ the number of elements in the set }E\\
+&\hspace{1em}|\Omega|=36,\text{ the number of elements in our sample space}
+\end{aligned}
 $$
 *Figure 3*
 ### Our Underlying Probability space
