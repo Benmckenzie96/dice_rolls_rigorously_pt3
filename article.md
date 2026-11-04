@@ -7,7 +7,7 @@ Not by ai badges will eventually go here
 - *Part 1: https://medium.com/@mckenzieben15/two-dice-done-rigorously-sigma-algebras-pushforward-measures-random-variables-and-why-7-wins-0379d5513631*
 - *Part 2: https://medium.com/@mckenzieben15/two-dice-done-rigorously-sigma-algebras-pushforward-measures-random-variables-and-why-7-wins-0379d5513631*
 ## Brief Recap
-In the first article we learned about the probability space tuple, that our probability space is a measurable space equipped with a probability measure, and what a sigma algebra on a set is. In the second article, we learned about preimages and measurable functions, and how a random variable is a measurable function from our underlying probability space, to the space of adding our dice rolls together. We finished that article off with an example relating all the concepts together.
+In the first article we learned about the probability space tuple, that our probability space is a measurable space equipped with a probability measure, and what a sigma algebra on a set is. In the second article, we learned about preimages and measurable functions, and how a random variable is a measurable function from the measurable space (comprised of the sample space and event space), to the measurable space of adding our dice rolls together. We finished that article off with an example relating all the concepts together.
 
 In this article, we will tie all the concepts we've used together, and **finally** answer our question: *"Why does 7 win when rolling two dice and taking their sum?"*
 ## Defining our Probability Measure
