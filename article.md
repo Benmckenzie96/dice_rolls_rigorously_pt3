@@ -42,7 +42,16 @@ $$
 \begin{aligned}
 &\text{Claim: }\mu\left(\bigcup_{i=1}^n A_i\right)=\sum_{i=1}^n\mu(A_i)\text{ where all }A_1,A_2\dots\in\Sigma\text{ are pairwise disjoint}\\
 &\hspace{3em}\text{for some finite natural number, }n\\
-
+&\text{Proof:}\\
+&\hspace{3em}1. \text{ Let all }A_i=\emptyset\text{ for }i>n\\
+&\hspace{3em}2.\ \mu(\emptyset) = 0 \text{ via the second axiom of measures}\\
+&\hspace{3em}3. \text{ Let }\{A_1, A_2\dots A_n\dots\}\text{ be an infinite set of elements}\\
+&\hspace{4em}\text{ of our sigma algebra}\\
+&\hspace{3em}4.\ \mu\left(\bigcup_{i=1}^\infty A_i\right)=\sum_{i=1}^\infty\mu(A_i)\text{ where all }A_1,A_2\dots\in\Sigma\text{ are pairwise}\\
+&\hspace{4em}\text{ disjoint. This is our first axiom of measures}\\
+&\hspace{3em}5. \text{ Observe that all sets after set }n\text{ are empty, and that}\\
+&\hspace{4em}\text{since }n\text{ is finite, the subset of non empty sets is finite}\\
+&\text{Therefore, a measure has the property of finite additivity}
 \end{aligned}
 $$
 *Figure 1*
