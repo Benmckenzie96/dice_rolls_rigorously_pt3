@@ -36,16 +36,19 @@ $$
 1.\ \mu\left(\bigcup_{i=1}^\infty A_i\right)=\sum_{i=1}^\infty\mu(A_i)\text{ where all }A_1,A_2\dots\in\Sigma\text{ are pairwise disjoint}
 $$
 
-**That isn't finite!** Although it might seem obvious that the finite version follows, we are doing math here, and in math we have to be pedantic. Fortunately our proof isn't complicated:
-
+**That isn't finite!** Although it might seem obvious that the finite version follows, we are doing math here, and in math we have to be pedantic. Fortunately our proof isn't complicated. Basically, we simply take a set of non empty elements of our sigma algebra that is finite. Then we append an infinite number of empty sets at the end. Finally, when we take the inifinite union of this set, it collapses to the finite set of sigma algebra elements we actually care about. Formally the proof can be stated as follows:
 $$
 \begin{aligned}
-&\text{Claim: }\mu\left(\bigcup_{i=1}^n A_i\right)=\sum_{i=1}^n\mu(A_i)\text{ where all }A_1,A_2\dots\in\Sigma\text{ are pairwise disjoint}\\
+&\text{Claim: }\mu\left(\bigcup_{i=1}^n A_i\right)=\sum_{i=1}^n\mu(A_i)\text{ where all }A_1,A_2\dots A_n\in\Sigma\text{ are pairwise disjoint}\\
 &\hspace{3em}\text{for some finite natural number, }n\\
 &\text{Proof:}\\
 &\hspace{3em}1. \text{ Let all }A_i=\emptyset\text{ for }i>n\\
 &\hspace{3em}2.\ \mu(\emptyset) = 0 \text{ via the second axiom of measures}\\
 &\hspace{3em}3. \text{ Let }\{A_1, A_2\dots A_n\dots\}\text{ be an infinite set of elements}\\
+&\hspace{3em}4.\text { for an arbitrary set, }A,\ A\cup\emptyset=A.\text{ This is a direct consequence}\\
+&\hspace{4em}\text{of the definition of empty set and union.}\\
+&\hspace{3em}5. \bigcup_{i=1}^n A_i=\bigcup_{i=1}^\infty A_i\text{ due to the fact that the union of an arbitrary}\\
+&\hspace{4em}\text{ number of empty sets is still empty, and point 4}\\
 &\hspace{4em}\text{ of our sigma algebra}\\
 &\hspace{3em}4.\ \mu\left(\bigcup_{i=1}^\infty A_i\right)=\sum_{i=1}^\infty\mu(A_i)\text{ where all }A_1,A_2\dots\in\Sigma\text{ are pairwise}\\
 &\hspace{4em}\text{ disjoint. This is our first axiom of measures}\\
