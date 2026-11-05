@@ -10,6 +10,8 @@ Not by ai badges will eventually go here
 In the first article we learned about the probability space tuple, that our probability space is a measurable space equipped with a probability measure, and what a sigma algebra on a set is. In the second article, we learned about preimages and measurable functions, and how a random variable is a measurable function from the measurable space (comprised of the sample space and event space), to the measurable space of adding our dice rolls together. We finished that article off with an example relating all the concepts together.
 
 In this article, we will tie all the concepts we've used together, and **finally** answer our question: *"Why does 7 win when rolling two dice and taking their sum?"*
+
+### A Closer Look at Measures
 ## Defining our Probability Measure
 To start, we need to define the probability measure of our underlying probability space (the left side of our random variable). We learned in the first article that our underlying probability space is the measure space:
 $$
@@ -43,6 +45,17 @@ $$
 4.\ \mathcal{P}:\mathcal{F}\rightarrow[0,1]
 $$
 
+This makes our probability measure rules:
+$$
+\begin{aligned}
+&1.\ \mathcal{P}\left(\bigcup_{i=1}^\infty E_i\right)=\sum_{i=1}^\infty\mathcal{P}(E_i)\text{ where all }E_1,E_2\dots\in\mathcal{F}\text{ are pairwise disjoint}\\
+&2.\ \mathcal{P}(\emptyset)=0\\
+&3.\ \mathcal{P}(\Omega)=1, \text{ the measure of the sample space is } 1\\
+&4.\ \mathcal{P}:\mathcal{F}\rightarrow[0,1]
+\end{aligned}
+$$
+*figure 2*
+
 Now, we know that our sample space is an element of our event space, and we also know that the elements of our event space are subsets of our sample space. The question we want our probabiliy measure to answer is:
 $$
 \text{What are the chances of }E\in\mathcal{F}\text{ happening?}
@@ -66,6 +79,8 @@ $$
 &\hspace{1em}|\Omega|=36,\text{ the number of elements in our sample space}
 \end{aligned}
 $$
-*Figure 4*
+*Figure 3*
+### Quick check of Axioms
+If you are asking "what is an axiom?" don't worry. The "rules" in figure 4 are more formally known as "axioms". This is a philosophical topic in its own right, but the short version is: **A set of axioms is a set of logically consistent rules that we take as a given for the sake of definition.** The relation to what we are doing here: *we need to verify that our proposed probability measure shown in figure 4 adheres to the axioms (rules) of figure 14 from artilce 1
 ### Our Underlying Probability space
 conclusion where we show our probability space tuple. This would be the measurable space associated with the left side of our random variable.
