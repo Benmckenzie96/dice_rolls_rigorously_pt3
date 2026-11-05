@@ -16,8 +16,11 @@ $$
 \begin{aligned}
 &\hspace{3em}(\Omega,\mathcal{F},\mathcal{P})\\
 &\Omega:\text{ is our sample space}\\
+&\hspace{1em}\Omega=\{(i,j):i,j\in\{1,2,3,4,5,6\}\}\\
 &\mathcal{F}:\text{ is our event space}\\
-&\mathcal{P}: \text{ is our probability measure}
+&\hspace{1em}\mathcal{F}=2^\Omega\\
+&\mathcal{P}: \text{ is our probability measure}\\
+&\hspace{1em}\text{(more details to follow)}
 \end{aligned}
 $$
 *figure 1*
@@ -45,20 +48,9 @@ $$
 \text{What are the chances of }E\in\mathcal{F}\text{ happening?}
 $$
 ### A Bit of Intuition
-To build a bit of intuition before defining our probability measure formally, first recall what our sample space is:
-$$
-\Omega=\{\omega=(i,j):i,j\in\{1,2,3,4,5,6\}\}
-$$
-*Figure 2*
+To build a bit of intuition before defining our probability measure formally, first we can ask ourselves, *how many elements are there in our sample space?*
 
-Next, recall that our event space is the powerset of our sample space:
-
-$$
-\mathcal{F}=2^\Omega
-$$
-*figure 3*
-
-Next, we can ask ourselves, *how many elements are there in our sample space?* The answer 36. We arrive at this by noting for every 1st die roll, there are 6 possible ways to roll the second die. Since there are 6 possible ways to roll the first die, we have: 6x6=36.
+The answer 36. We arrive at this by noting for every 1st die roll, there are 6 possible ways to roll the second die. Since there are 6 possible ways to roll the first die, we have: 6x6=36.
 
 With the observation above, we know that the chances of getting **one specific pair of values** is then 1/36. Here is a quick quiz: *What are the chances of getting 3 distinct pairs of dice rolls?*
 
