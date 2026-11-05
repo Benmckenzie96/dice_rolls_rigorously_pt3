@@ -38,7 +38,7 @@ $$
 $$
 *figure 14 from article 1*
 
-Note that since we know from article 1 that the max value our probability measure can take is 1, we can restate rule 4 as:
+Note that since we know that the max value our probability measure can take is 1 (by defintion), we know that the smallest value it can take is 0 (if we have an empty set as our event) and we have the property of monotonicity of the probability measure on the size of our sets in the event space, we can restate rule 4 as:
 $$
 4.\ \mathcal{P}:\mathcal{F}\rightarrow[0,1]
 $$
@@ -52,7 +52,7 @@ To build a bit of intuition before defining our probability measure formally, fi
 
 The answer 36. We arrive at this by noting for every 1st die roll, there are 6 possible ways to roll the second die. Since there are 6 possible ways to roll the first die, we have: 6x6=36.
 
-With the observation above, we know that the chances of getting **one specific pair of values** is then 1/36. Here is a quick quiz: *What are the chances of getting 3 distinct pairs of dice rolls?*
+Since we are using fair dice, with the observation above we know that the chances of getting **one specific pair of values** is then 1/36. Here is a quick quiz: *What are the chances of getting 3 distinct pairs of dice rolls?*
 
 The answer...... 3/36. This will be the case for any number, we simply **divide the number of specific pairs of dice rolls by 36, the total number of pairs we have**. We need to relate this back to our formal framework though.
 
