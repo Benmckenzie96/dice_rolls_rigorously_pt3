@@ -11,7 +11,41 @@ In the first article we learned about the probability space tuple, that our prob
 
 In this article, we will tie all the concepts we've used together, and **finally** answer our question: *"Why does 7 win when rolling two dice and taking their sum?"*
 
-### A Closer Look at Measures
+## A Closer Look at Measures
+We need to take a closer look at measures in order to have a smooth ride in this article. This will be restating things we've already learned, but having them here will make this process easier.
+### Axioms of Measures
+First, if you are asking the question, **What is an axiom?** Don't worry. Although the study of axioms is a deep topic in philosophy, for our purposes we only need to know that **axioms are logically consistent rules which we agree upon**.
+
+Recall from the first article that a measure is a function that goes from a sigma to the interval of positive numbers:
+$$
+\mu:\Sigma\rightarrow[0,\infty]
+$$
+*Figure 11 from Article 1*
+
+Where the measure adheres to the following two rules (axioms):
+$$
+\begin{aligned}
+&1.\ \mu\left(\bigcup_{i=1}^\infty A_i\right)=\sum_{i=1}^\infty\mu(A_i)\text{ where all }A_1,A_2\dots\in\Sigma\text{ are pairwise disjoint}\\
+&2.\ \mu(\emptyset)=0
+\end{aligned}
+$$
+*Figure 12 from Article 1*
+### Useful Lemma of Measures: Finite Additivity
+Here we go introducing more vocabulary words into the mix. **What is a lemma?** Axioms are the statements we take as a given, the rules we define. **A lemma is a logical consequence of those axioms which ends up being a useful stepping stone to further the conversation**. Here, we will prove the lemma of finite additivity of measures, and will end up using the lemma later in this article. Observe that rule 1 from figure 12 of our first article goes to infinity:
+$$
+1.\ \mu\left(\bigcup_{i=1}^\infty A_i\right)=\sum_{i=1}^\infty\mu(A_i)\text{ where all }A_1,A_2\dots\in\Sigma\text{ are pairwise disjoint}
+$$
+
+**That isn't finite!** Although it might seem obvious that the finite version follows, we are doing math here, and in math we have to be pedantic. Fortunately our proof isn't complicated:
+
+$$
+\begin{aligned}
+&\text{Claim: }\mu\left(\bigcup_{i=1}^n A_i\right)=\sum_{i=1}^n\mu(A_i)\text{ where all }A_1,A_2\dots\in\Sigma\text{ are pairwise disjoint}\\
+&\hspace{3em}\text{for some finite natural number, }n\\
+
+\end{aligned}
+$$
+*Figure 1*
 ## Defining our Probability Measure
 To start, we need to define the probability measure of our underlying probability space (the left side of our random variable). We learned in the first article that our underlying probability space is the measure space:
 $$
