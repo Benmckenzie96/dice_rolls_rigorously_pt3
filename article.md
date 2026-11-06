@@ -48,12 +48,13 @@ $$
 &\hspace{3em}4.\text { for an arbitrary set, }A,\ A\cup\emptyset=A.\text{ This is a direct consequence}\\
 &\hspace{4em}\text{of the definition of empty set and union.}\\
 &\hspace{3em}5. \bigcup_{i=1}^n A_i=\bigcup_{i=1}^\infty A_i\text{ due to the fact that the union of an arbitrary}\\
-&\hspace{4em}\text{ number of empty sets is still empty, and point 4}\\
-&\hspace{4em}\text{ of our sigma algebra}\\
-&\hspace{3em}4.\ \mu\left(\bigcup_{i=1}^\infty A_i\right)=\sum_{i=1}^\infty\mu(A_i)\text{ where all }A_1,A_2\dots\in\Sigma\text{ are pairwise}\\
+&\hspace{4em}\text{number of empty sets is still empty, as well as how we defined}\\
+&\hspace{4em}\text{our set of sets in step 3, and the point in step 1.}\\
+&\hspace{3em}6.\ \mu\left(\bigcup_{i=1}^\infty A_i\right)=\sum_{i=1}^\infty\mu(A_i)\text{ where all }A_1,A_2\dots\in\Sigma\text{ are pairwise}\\
 &\hspace{4em}\text{ disjoint. This is our first axiom of measures}\\
-&\hspace{3em}5. \text{ Observe that all sets after set }n\text{ are empty, and that}\\
-&\hspace{4em}\text{since }n\text{ is finite, the subset of non empty sets is finite}\\
+&\hspace{3em}7.\text{ Given points 1,2, and 3, we also have:}\sum_{i=1}^n\mu(A_i)=\sum_{i=1}^\infty\mu(A_i)\\
+&\hspace{3em}\text{8. Finally, using 5, 6, and 7, we can state our claim:}\\
+&\hspace{4em}\mu\left(\bigcup_{i=1}^n A_i\right)=\sum_{i=1}^n\mu(A_i)\text{ where all }A_1,A_2\dots A_n\in\Sigma\text{ are pairwise disjoint}\\
 &\text{Therefore, a measure has the property of finite additivity}
 \end{aligned}
 $$
