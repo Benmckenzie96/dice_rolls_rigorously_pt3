@@ -37,25 +37,28 @@ $$
 $$
 
 **That isn't finite!** Although it might seem obvious that the finite version follows, we are doing math here, and in math we have to be pedantic. Fortunately our proof isn't complicated. Basically, we simply take a set of non empty elements of our sigma algebra that is finite. Then we append an infinite number of empty sets at the end. Finally, when we take the inifinite union of this set, it collapses to the finite set of sigma algebra elements we actually care about. Formally the proof can be stated as follows:
+
 $$
 \begin{aligned}
-&\text{Claim: }\mu\left(\bigcup_{i=1}^n A_i\right)=\sum_{i=1}^n\mu(A_i)\text{ where all }A_1,A_2\dots A_n\in\Sigma\text{ are pairwise disjoint}\\
-&\hspace{3em}\text{for some finite natural number, }n\\
+&\text{Claim: Given a measurable space }(X,\Sigma)\text{ and}\ n\in\mathbb{N}:\ \mu\left(\bigcup_{i=1}^n A_i\right)=\sum_{i=1}^n\mu(A_i)\\
+&\hspace{3em}\text{ where all }A_1,A_2\dots A_n\in\Sigma\text{ are pairwise disjoint.}\\
 &\text{Proof:}\\
-&\hspace{3em}1. \text{ Let all }A_i=\emptyset\text{ for }i>n\\
-&\hspace{3em}2.\ \mu(\emptyset) = 0 \text{ via the second axiom of measures}\\
-&\hspace{3em}3. \text{ Let }\{A_1, A_2\dots A_n\dots\}\text{ be an infinite set of elements}\\
-&\hspace{3em}4.\text { for an arbitrary set, }A,\ A\cup\emptyset=A.\text{ This is a direct consequence}\\
-&\hspace{4em}\text{of the definition of empty set and union.}\\
-&\hspace{3em}5. \bigcup_{i=1}^n A_i=\bigcup_{i=1}^\infty A_i\text{ due to the fact that the union of an arbitrary}\\
-&\hspace{4em}\text{number of empty sets is still empty, as well as how we defined}\\
-&\hspace{4em}\text{our set of sets in step 3, and the point in step 1.}\\
-&\hspace{3em}6.\ \mu\left(\bigcup_{i=1}^\infty A_i\right)=\sum_{i=1}^\infty\mu(A_i)\text{ where all }A_1,A_2\dots\in\Sigma\text{ are pairwise}\\
-&\hspace{4em}\text{ disjoint. This is our first axiom of measures}\\
-&\hspace{3em}7.\text{ Given points 1,2, and 3, we also have:}\sum_{i=1}^n\mu(A_i)=\sum_{i=1}^\infty\mu(A_i)\\
-&\hspace{3em}\text{8. Finally, using 5, 6, and 7, we can state our claim:}\\
-&\hspace{4em}\mu\left(\bigcup_{i=1}^n A_i\right)=\sum_{i=1}^n\mu(A_i)\text{ where all }A_1,A_2\dots A_n\in\Sigma\text{ are pairwise disjoint}\\
-&\text{Therefore, a measure has the property of finite additivity}
+&\hspace{3em}1. \text{ Define the sequence of sets: }\left(A_i\right)_{i\in\mathbb{N}},\text{where }A_1\dots A_n\text{ are the sets}\\
+&\hspace{4em}\text{from our claim, and }A_i=\emptyset\text{ for }i>n\\
+&\hspace{3em}2.\text{ By definition of sigma algebra: }\emptyset=X^c\in\Sigma\text{ so all }A_i\in\Sigma\text{ (This step}\\
+&\hspace{4em}\text{(simply shows that our empty set is in the sigma algebra)}\\
+&\hspace{3em}3.\text{ All sets in our sequence from point 1 are pairwise disjoint:}\\
+&\hspace{4em}\text{The first }n\text{ sets are by our claim. The remaining sets are by}\\
+&\hspace{4em}\text{the fact that }\emptyset\cap A=\emptyset\text{ for any set } A\text{ and all remaining sets are }\emptyset\\
+&\hspace{3em}4.\text{ By the axiom of sigma additivity of measures, and point 3:}\\
+&\hspace{4em}\mu\left(\bigcup_{i=1}^\infty A_i\right)=\sum_{i=1}^\infty\mu(A_i)\\
+&\hspace{3em}5.\text{ By our sequence definition in point 1: }\\
+&\hspace{4em}\bigcup_{i=1}^\infty(A_i)=\left(\bigcup_{i=1}^n A_i\right)\cup\emptyset=\bigcup_{i=1}^n A_i\\
+&\hspace{3em}6.\text{ By Linearity of summation: }\sum_{i=1}^\infty a_i=\sum_{i=1}^n a_i+\sum_{i=n+1}^\infty a_i\\
+&\hspace{3em}7.\text{ By axiom the axiom of measure, }\mu(\emptyset)=0\text{ and 6}:\\
+&\hspace{4em}\sum_{i=1}^\infty\mu(A_i)=\sum_{i=1}^n \mu(A_i)+\sum_{i=n+1}^\infty\mu(A_i)\text{ and with point 1:}\\
+&\hspace{4em}\sum_{i=n+1}^\infty\mu(A_i)=0,\text{ so }\sum_{i=1}^\infty\mu(A_i)=\sum_{i=1}^n\mu(A_i)+0\\
+&\text{ Finally, subbing 5 and 7 into 4 gives us the claim}
 \end{aligned}
 $$
 *Figure 1*
