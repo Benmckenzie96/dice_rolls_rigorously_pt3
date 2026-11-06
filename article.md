@@ -40,25 +40,30 @@ $$
 
 $$
 \begin{aligned}
-&\text{Claim: Given a measurable space }(X,\Sigma)\text{ and}\ n\in\mathbb{N}:\ \mu\left(\bigcup_{i=1}^n A_i\right)=\sum_{i=1}^n\mu(A_i)\\
-&\hspace{3em}\text{ where all }A_1,A_2\dots A_n\in\Sigma\text{ are pairwise disjoint.}\\
+&\text{Claim: Let }(X,\Sigma,\mu)\text{ be a measure space }, n\in\mathbb{N},\text{ and }A_1,A_2\dots A_n\in\Sigma\text{ be }\\
+&\hspace{3em}\text{ be pairwise disjoint. Then: }\mu\left(\bigcup_{i=1}^n A_i\right)=\sum_{i=1}^n\mu(A_i)\\
 &\text{Proof:}\\
 &\hspace{3em}1. \text{ Define the sequence of sets: }\left(A_i\right)_{i\in\mathbb{N}},\text{where }A_1\dots A_n\text{ are the sets}\\
 &\hspace{4em}\text{from our claim, and }A_i=\emptyset\text{ for }i>n\\
-&\hspace{3em}2.\text{ By definition of sigma algebra: }\emptyset=X^c\in\Sigma\text{ so all }A_i\in\Sigma\text{ (This step}\\
-&\hspace{4em}\text{(simply shows that our empty set is in the sigma algebra)}\\
+&\hspace{3em}2.\text{ By definition of sigma algebra: }\emptyset=X^c\in\Sigma\text{ and }X\in\Sigma\text{ so all }A_i\in\Sigma.\\
+&\hspace{4em}\text{This step simply shows that }\emptyset\in\Sigma\text{ so the extended sequence stays inside }\Sigma.\\
 &\hspace{3em}3.\text{ All sets in our sequence from point 1 are pairwise disjoint:}\\
-&\hspace{4em}\text{The first }n\text{ sets are by our claim. The remaining sets are by}\\
+&\hspace{4em}\text{The first }n\text{ sets are by our claim. The remaining sets are pairwise disjoint by}\\
 &\hspace{4em}\text{the fact that }\emptyset\cap A=\emptyset\text{ for any set } A\text{ and all remaining sets are }\emptyset\\
 &\hspace{3em}4.\text{ By the axiom of sigma additivity of measures, and point 3:}\\
 &\hspace{4em}\mu\left(\bigcup_{i=1}^\infty A_i\right)=\sum_{i=1}^\infty\mu(A_i)\\
 &\hspace{3em}5.\text{ By our sequence definition in point 1: }\\
-&\hspace{4em}\bigcup_{i=1}^\infty(A_i)=\left(\bigcup_{i=1}^n A_i\right)\cup\emptyset=\bigcup_{i=1}^n A_i\\
-&\hspace{3em}6.\text{ By Linearity of summation: }\sum_{i=1}^\infty a_i=\sum_{i=1}^n a_i+\sum_{i=n+1}^\infty a_i\\
-&\hspace{3em}7.\text{ By axiom the axiom of measure, }\mu(\emptyset)=0\text{ and 6}:\\
-&\hspace{4em}\sum_{i=1}^\infty\mu(A_i)=\sum_{i=1}^n \mu(A_i)+\sum_{i=n+1}^\infty\mu(A_i)\text{ and with point 1:}\\
-&\hspace{4em}\sum_{i=n+1}^\infty\mu(A_i)=0,\text{ so }\sum_{i=1}^\infty\mu(A_i)=\sum_{i=1}^n\mu(A_i)+0\\
-&\text{ Finally, subbing 5 and 7 into 4 gives us the claim}
+&\hspace{4em}\bigcup_{i=1}^\infty(A_i)=\left(\bigcup_{i=1}^nA_i\right)\cup\left(\bigcup_{i=n+1}^\infty A_i\right)=\left(\bigcup_{i=1}^n A_i\right)\cup\emptyset=\bigcup_{i=1}^n A_i\\
+&\hspace{3em}6.\text{ By properties of summation: }\sum_{i=1}^\infty a_i=\sum_{i=1}^n a_i+\sum_{i=n+1}^\infty a_i\\
+&\hspace{4em}\text{Note that since our measure is nonnegative by definition, all values}\\
+&\hspace{4em}\text{in our sum are in }[0,\infty], \text{which makes our sum well defined. We don't}\\
+&\hspace{4em}\text{worry about any cases of undefined: }\infty-\infty\\
+&\hspace{3em}7.\text{ For }i>n,\ A_i=\emptyset.\text{ Therefore, }\mu(A_i)=0\text{ for }i>n\text{ by the nullset axiom of}\\
+&\hspace{4em}\text{measure: }\mu(\emptyset)=0\text{ and by 6, we can split our sum at }n.\text{ Hence:}\\
+&\hspace{4em}\sum_{i=1}^\infty\mu(A_i)=\sum_{i=1}^n \mu(A_i)+\sum_{i=n+1}^\infty\mu(A_i)\text{ and }\sum_{i=n+1}^\infty\mu(A_i)=0,\text{ so }\\
+&\hspace{4em}\sum_{i=1}^\infty\mu(A_i)=\sum_{i=1}^n\mu(A_i)+0\\
+&\hspace{3em}8.\text{ Substituting 5 and 7 into 4 gives us: }\mu\left(\bigcup_{i=1}^n A_i\right)=\sum_{i=1}^n\mu(A_i)\\
+&\hspace{4em}\text{Which is the claim.}
 \end{aligned}
 $$
 *Figure 1*
