@@ -69,9 +69,28 @@ $$
 \end{aligned}
 $$
 *Figure 1*
+### Definition: Set Equality
+If you couldn't already tell, we need some set theory to make this series rigorous. Here we are simply stating a definition: **The definition of set equality**. This is a definition, so we don't prove it. The good news for us? This definition is intuitive.
+$$
+\begin{aligned}
+&\textit{Definition.}\text{ Two sets, }A\text{ and }B,\text{ are said to be equal, written }A=B,\\
+&\text{if and only if }\forall x\, (x\in A\iff x\in B)
+\end{aligned}
+$$
+*figure 2*
 
+That's just the fancy math way to say that the two sets have the same elements, and this is when we say the two sets are equal.
 
-### Lemma: Demorgan's Law  
+**Caveat**: since mathematics requires super specific, precise terminology, it should be noted that **set equality** and **set equivalence** are two different things. (if you are groaning, that's understandable. I did as well when I read this). The distinction isn't too complicated: *set equality* means the two sets contain the *exact same elements*. In contrast, *set equivalence* means that the two sets have the same *cardinality* or size. Understanding equivalence is not necessary for this article, but at a high level we call same-cardinality-sets equivalent since we can make a bridge between the two. *(Seriously you can ignore this if you want to, I felt compelled to mention it though.)*
+### Lemma: Demorgan's Law 
+Another Lemma! (If you couldn't tell by now math requires you to show your work). We will use our definition of set equality above in our proof of Demorgan's Law.
+$$
+\begin{aligned}
+&\text{Claim: }
+\end{aligned}
+$$
+*figure 3*
+# scratch but possibly useful later
 ## Defining our Probability Measure
 To start, we need to define the probability measure of our underlying probability space (the left side of our random variable). We learned in the first article that our underlying probability space is the measure space:
 $$
