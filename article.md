@@ -11,12 +11,14 @@ In the first article we learned about the probability space tuple, that our prob
 
 In this article, we will tie all the concepts we've used together, and **finally** answer our question: *"Why does 7 win when rolling two dice and taking their sum?"*
 
+**Fair warning**: *This article is by far the densest in the series, and will involve proofs of claims that require smaller building block proofs. There will be a lot of math notation, but the first two articles were written to prepare us for this final discussion.*
+
 ## A Closer Look at Measures
 We need to take a closer look at measures in order to have a smooth ride in this article. This will be restating things we've already learned, but having them here will make this process easier.
 ### Axioms of Measures
 First, if you are asking the question, **What is an axiom?** Don't worry. Although the study of axioms is a deep topic in philosophy, for our purposes we only need to know that **axioms are logically consistent rules which we agree upon**.
 
-Recall from the first article that a measure is a function that goes from a sigma to the interval of positive numbers:
+Recall from the first article that a measure is a function that goes from a sigma to the interval:
 $$
 \mu:\Sigma\rightarrow[0,\infty]
 $$
@@ -38,7 +40,7 @@ $$
 1.\ \mu\left(\bigcup_{i=1}^\infty A_i\right)=\sum_{i=1}^\infty\mu(A_i)\text{ where all }A_1,A_2\dots\in\Sigma\text{ are pairwise disjoint}
 $$
 
-**That isn't finite!** Although it might seem obvious that the finite version follows, we are doing math here, and in math we have to be pedantic. Fortunately our proof isn't complicated. Basically, we simply take a set of non empty elements of our sigma algebra that is finite. Then we append an infinite number of empty sets at the end. Finally, when we take the inifinite union of this set, it collapses to the finite set of sigma algebra elements we actually care about. Formally the proof can be stated as follows:
+**That isn't finite!** Although it might seem obvious that the finite version follows, we are doing math here, and in math we have to be pedantic. Fortunately our proof isn't complicated. Basically, we simply take a set of elements of our sigma algebra that is finite. Then we append an infinite number of empty sets at the end. Finally, when we take the inifinite union of this set, and it collapses to the finite set of sigma algebra elements we actually care about. Formally the proof can be stated as follows:
 
 $$
 \begin{aligned}
@@ -60,7 +62,7 @@ $$
 &\hspace{4em}\text{Note that since our measure is nonnegative by definition, all values}\\
 &\hspace{4em}\text{in our sum are in }[0,\infty], \text{which makes our sum well defined. We don't}\\
 &\hspace{4em}\text{worry about any cases of undefined: }\infty-\infty\\
-&\hspace{3em}7.\text{ For }i>n,\ A_i=\emptyset.\text{ Therefore, }\mu(A_i)=0\text{ for }i>n\text{ by the nullset axiom of}\\
+&\hspace{3em}7.\text{ For }i>n,\ A_i=\emptyset.\text{ Therefore, }\mu(A_i)=0\text{ for }i>n\text{ by the empty-set axiom of}\\
 &\hspace{4em}\text{measure: }\mu(\emptyset)=0\text{ and by 6, we can split our sum at }n.\text{ Hence:}\\
 &\hspace{4em}\sum_{i=1}^\infty\mu(A_i)=\sum_{i=1}^n \mu(A_i)+\sum_{i=n+1}^\infty\mu(A_i)\text{ and }\sum_{i=n+1}^\infty\mu(A_i)=0,\text{ so }\\
 &\hspace{4em}\sum_{i=1}^\infty\mu(A_i)=\sum_{i=1}^n\mu(A_i)+0\\
@@ -81,12 +83,13 @@ $$
 
 That's just the fancy math way to say that the two sets have the same elements, and this is when we say the two sets are equal.
 
-**Caveat**: since mathematics requires super specific, precise terminology, it should be noted that **set equality** and **set equivalence** are two different things. (if you are groaning, that's understandable. I did as well when I read this). The distinction isn't too complicated: *set equality* means the two sets contain the *exact same elements*. In contrast, *set equivalence* means that the two sets have the same *cardinality* or size. Understanding equivalence is not necessary for this article, but at a high level we call same-cardinality-sets equivalent since we can make a bridge between the two. *(Seriously you can ignore this if you want to, I felt compelled to mention it though.)*
+**Caveat**: *(you can ignore this paragraph if you want)* since mathematics requires super specific, precise terminology, it should be noted that **set equality** and **set equivalence** are two different things. (if you are groaning, that's understandable. I did as well when I learned this). The distinction isn't too complicated: *set equality* means the two sets contain the *exact same elements*. In contrast, *set equivalence* means that the two sets have the same *cardinality* or size. Understanding equivalence is not necessary for this article, but at a high level we call same-cardinality-sets equivalent since we can make a bridge between the two. *(Seriously you can ignore this if you want to, I felt compelled to mention it though.)* If you want to groan even more (I know I do.... just kidding my brain hurts) authors usually use the terms “equinumerous” or “equipotent” for set equivalency. 
+
 ### Lemma: Demorgan's Law 
 Another Lemma! (If you couldn't tell by now math requires you to show your work). We will use our definition of set equality above in our proof of Demorgan's Law.
 $$
 \begin{aligned}
-&\text{Claim: }
+&\text{Claim: Let }(X,\Sigma)\text{ be a measurable space}
 \end{aligned}
 $$
 *figure 3*
