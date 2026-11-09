@@ -22,7 +22,7 @@ $$
 $$
 *Figure 11 from Article 1*
 
-Where the measure adheres to the following two rules (axioms):
+Where the measure adheres to the following two rules:
 $$
 \begin{aligned}
 &1.\ \mu\left(\bigcup_{i=1}^\infty A_i\right)=\sum_{i=1}^\infty\mu(A_i)\text{ where all }A_1,A_2\dots\in\Sigma\text{ are pairwise disjoint}\\
@@ -30,6 +30,8 @@ $$
 \end{aligned}
 $$
 *Figure 12 from Article 1*
+
+These rules and definition are the axioms of a measure.
 ### Useful Lemma of Measures: Finite Additivity
 Here we go introducing more vocabulary words into the mix. **What is a lemma?** Axioms are the statements we take as a given, the rules we define. **A lemma is a logical consequence of those axioms which ends up being a useful stepping stone to further the conversation**. Here, we will prove the lemma of finite additivity of measures, and will end up using the lemma later in this article. Observe that rule 1 from figure 12 of our first article goes to infinity:
 $$
@@ -40,8 +42,8 @@ $$
 
 $$
 \begin{aligned}
-&\text{Claim: Let }(X,\Sigma,\mu)\text{ be a measure space }, n\in\mathbb{N},\text{ and }A_1,A_2\dots A_n\in\Sigma\text{ be }\\
-&\hspace{3em}\text{ be pairwise disjoint. Then: }\mu\left(\bigcup_{i=1}^n A_i\right)=\sum_{i=1}^n\mu(A_i)\\
+&\text{Claim: Let }(X,\Sigma,\mu)\text{ be a measure space}, n\in\mathbb{N},\text{ and }A_1,A_2\dots A_n\in\Sigma\text{ be }\\
+&\hspace{3em}\text{ pairwise disjoint. Then: }\mu\left(\bigcup_{i=1}^n A_i\right)=\sum_{i=1}^n\mu(A_i)\\
 &\text{Proof:}\\
 &\hspace{3em}1. \text{ Define the sequence of sets: }\left(A_i\right)_{i\in\mathbb{N}},\text{where }A_1\dots A_n\text{ are the sets}\\
 &\hspace{4em}\text{from our claim, and }A_i=\emptyset\text{ for }i>n\\
@@ -63,10 +65,13 @@ $$
 &\hspace{4em}\sum_{i=1}^\infty\mu(A_i)=\sum_{i=1}^n \mu(A_i)+\sum_{i=n+1}^\infty\mu(A_i)\text{ and }\sum_{i=n+1}^\infty\mu(A_i)=0,\text{ so }\\
 &\hspace{4em}\sum_{i=1}^\infty\mu(A_i)=\sum_{i=1}^n\mu(A_i)+0\\
 &\hspace{3em}8.\text{ Substituting 5 and 7 into 4 gives us: }\mu\left(\bigcup_{i=1}^n A_i\right)=\sum_{i=1}^n\mu(A_i)\\
-&\hspace{4em}\text{Which is the claim.}
+&\hspace{4em}\text{Which is the claim. }\blacksquare
 \end{aligned}
 $$
 *Figure 1*
+
+
+### Lemma: Demorgan's Law  
 ## Defining our Probability Measure
 To start, we need to define the probability measure of our underlying probability space (the left side of our random variable). We learned in the first article that our underlying probability space is the measure space:
 $$
@@ -81,6 +86,7 @@ $$
 \end{aligned}
 $$
 *figure 1*
+
 
 While we did give an overview of our probability measure and the qualities it has (*figure 14 in article 1*) we didn't actually define what values it takes. Here is where will will do so!
 
