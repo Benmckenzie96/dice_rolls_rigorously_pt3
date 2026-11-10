@@ -104,6 +104,7 @@ $$
 \end{aligned}
 $$
 
+
 # scratch but possibly useful later
 ## Defining our Probability Measure
 To start, we need to define the probability measure of our underlying probability space (the left side of our random variable). We learned in the first article that our underlying probability space is the measure space:
