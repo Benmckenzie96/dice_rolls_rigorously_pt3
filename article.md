@@ -89,7 +89,18 @@ That's just the fancy math way to say that the two sets have the same elements, 
 Demorgan's Law was originally proven in the context of logic, not set theory. However, it has a version in set theory, and we need it as a lemma. *(Imagine doing this without the internet and only books. I didn't becuase I started to cry in a coffee shop, but you could and let me know how that goes.)* We will use our definition of set equality above in our proof of Demorgan's Law here.
 $$
 \begin{aligned}
-
+&\text{Claim: Let }X\text{ be an underlying/ambient set.}\text{ Let } \{A_i\}_{i\in I}\text{ be an arbitrary}\\
+&\hspace{3em}\text{ family of subsets of }X.\text{ Let }B^c\text{ denote the complement of an arbitrary}\\
+&\hspace{3em}\text{ subset of }X,\text{ taken relative to }X.\text{ Let }A_k,\ A_j\in\{A_i\}_{i\in I}\\
+&\hspace{3em}\text{ be two arbitrary members of the family. Then: } (A_k\cup A_j)^c=A_k^c\cap A_j^c\\
+&\text{Proof:}\\
+&\hspace{3em}\text{1. Let }x\in(A_k\cup A_j)^c. \text{ Then: }x\notin A_k\ and\ x\notin A_j.\text{ (written using formal logic:}\\
+&\hspace{4em}x\notin A_k\land x\notin A_j\text{)}\\
+&\hspace{3em}\text{2. By definition of set complement and 1, we have }x\in A_k^c\land x\in A_j^c\\
+&\hspace{3em}\text{3. By definition of set intersection and 2, we have }x\in A_k^c\cap A_j^c\\
+&\hspace{3em}\text{4. By 1 and 3: }x\in (A_k\cup A_j)^c\iff x\in A_k^c\cap A_j^c\\
+&\hspace{3em}\text{5. Therefore, by defintion of set equality: }(A_k\cup A_j)^c=A_k^c\cap A_j^c\\
+&\hspace{4em}\text{which is our claim }\blacksquare
 \end{aligned}
 $$
 
