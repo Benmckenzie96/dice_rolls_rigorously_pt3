@@ -13,8 +13,8 @@ In this article, we will tie all the concepts we've used together, and **finally
 
 **Fair warning**: *This article is by far the densest in the series, and will involve proofs of claims that require smaller building block proofs. There will be a lot of math notation, but the first two articles were written to prepare us for this final discussion.*
 
-## A Closer Look at Measures
-We need to take a closer look at measures in order to have a smooth ride in this article. This will be restating things we've already learned, but having them here will make this process easier.
+## A Closer Look at Measures and Set Theory
+We need to take a closer look at measures *(and some set theory which we've already been doing)* in order to have a smooth ride in this article.
 ### Axioms of Measures
 First, if you are asking the question, **What is an axiom?** Don't worry. Although the study of axioms is a deep topic in philosophy, for our purposes we only need to know that **axioms are logically consistent rules which we agree upon**.
 
@@ -75,7 +75,7 @@ $$
 If you couldn't already tell, we need some set theory to make this series rigorous. Here we are simply stating a definition: **The definition of set equality**. This is a definition, so we don't prove it. The good news for us? This definition is intuitive.
 $$
 \begin{aligned}
-&\textit{Definition.}\text{ Two sets, }A\text{ and }B,\text{ are said to be equal, written }A=B,\\
+&\textit{Definition.}\text{ Two sets }A\text{ and }B\text{ are said to be equal, written }A=B,\\
 &\text{if and only if }\forall x\, (x\in A\iff x\in B)
 \end{aligned}
 $$
@@ -85,18 +85,14 @@ That's just the fancy math way to say that the two sets have the same elements, 
 
 **Caveat**: *(you can ignore this paragraph if you want)* since mathematics requires super specific, precise terminology, it should be noted that **set equality** and **set equivalence** are two different things. (if you are groaning, that's understandable. I did as well when I learned this). The distinction isn't too complicated: *set equality* means the two sets contain the *exact same elements*. In contrast, *set equivalence* means that the two sets have the same *cardinality* or size. Understanding equivalence is not necessary for this article, but at a high level we call same-cardinality-sets equivalent since we can make a bridge between the two. If you want to groan even more (I know I do.... just kidding my brain hurts) authors usually use the terms “equinumerous” or “equipotent” for set equivalency. *(Seriously you can ignore this paragraph if you want to, I felt compelled to mention it though.)*
 
-### Lemma: Demorgan's Law in Propositional Logic
-Another Lemma! (If you couldn't tell by now math requires you to show your work). What we are going to do here is present a "truth table" to show that Demorgan's law holds. In the following table, the letters are propositions *(don't google propositional logic unless you want a brain aneurism.)* All we need to know is:
-- letters, such as "P" or "Q" represent statements that are either true or false. For example, "P" could be the proposition, "It is raining", and "Q" could mean "It is Friday"
-- We can combine letters using 
 ### Lemma: Demorgan's Law in Set Theory
-We need the set theory version of Demorgan's Law above. *(Imagine doing this without the internet and just books. I didn't becuase I started to cry in a coffee shop, but you could and let me know how that goes.)* We will use our definition of set equality above in our proof of Demorgan's Law here.
+Demorgan's Law was originally proven in the context of logic, not set theory. However, it has a version in set theory, and we need it as a lemma. *(Imagine doing this without the internet and only books. I didn't becuase I started to cry in a coffee shop, but you could and let me know how that goes.)* We will use our definition of set equality above in our proof of Demorgan's Law here.
 $$
 \begin{aligned}
-&\text{Claim: Let }(X,\Sigma)\text{ be a measurable space}
+
 \end{aligned}
 $$
-*figure 3*
+
 # scratch but possibly useful later
 ## Defining our Probability Measure
 To start, we need to define the probability measure of our underlying probability space (the left side of our random variable). We learned in the first article that our underlying probability space is the measure space:
